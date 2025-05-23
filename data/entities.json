@@ -1,0 +1,126 @@
+[
+    {
+      "text": "Tôi tên là Nguyễn Văn An, năm nay 35 tuổi",
+      "entities": [
+        {"entity": "name", "value": "Nguyễn Văn An", "start": 10, "end": 22},
+        {"entity": "age", "value": "35", "start": 33, "end": 35}
+      ]
+    },
+    {
+      "text": "Tôi là Trần Thị Bình, 42 tuổi, sống ở Hà Nội",
+      "entities": [
+        {"entity": "name", "value": "Trần Thị Bình", "start": 7, "end": 20},
+        {"entity": "age", "value": "42", "start": 22, "end": 24},
+        {"entity": "location", "value": "Hà Nội", "start": 33, "end": 39}
+      ]
+    },
+    {
+      "text": "Số điện thoại của tôi là 0912345678",
+      "entities": [
+        {"entity": "phone", "value": "0912345678", "start": 25, "end": 35}
+      ]
+    },
+    {
+      "text": "Các bạn có thể liên hệ với tôi qua số 0987654321",
+      "entities": [
+        {"entity": "phone", "value": "0987654321", "start": 38, "end": 48}
+      ]
+    },
+    {
+      "text": "Tôi bị đau đầu và chóng mặt mấy hôm nay",
+      "entities": [
+        {"entity": "symptom", "value": "đau đầu và chóng mặt", "start": 7, "end": 27}
+      ]
+    },
+    {
+      "text": "Tôi hay bị khó thở khi vận động và đau ngực",
+      "entities": [
+        {"entity": "symptom", "value": "khó thở khi vận động", "start": 10, "end": 29},
+        {"entity": "symptom", "value": "đau ngực", "start": 33, "end": 41}
+      ]
+    },
+    {
+      "text": "Tôi muốn đặt lịch khám vào ngày 28/05/2025",
+      "entities": [
+        {"entity": "date", "value": "28/05/2025", "start": 30, "end": 40}
+      ]
+    },
+    {
+      "text": "Tôi có thể đến khám vào thứ 5 tuần sau",
+      "entities": [
+        {"entity": "day_of_week", "value": "thứ 5", "start": 22, "end": 27},
+        {"entity": "relative_time", "value": "tuần sau", "start": 28, "end": 36}
+      ]
+    },
+    {
+      "text": "Tôi muốn đặt lịch lúc 10:30",
+      "entities": [
+        {"entity": "time", "value": "10:30", "start": 24, "end": 29}
+      ]
+    },
+    {
+      "text": "Buổi sáng lúc 9 giờ được không?",
+      "entities": [
+        {"entity": "period", "value": "buổi sáng", "start": 0, "end": 10},
+        {"entity": "time", "value": "9 giờ", "start": 15, "end": 20}
+      ]
+    },
+    {
+      "text": "Tôi muốn khám khoa Thần kinh",
+      "entities": [
+        {"entity": "department", "value": "Thần kinh", "start": 18, "end": 27}
+      ]
+    },
+    {
+      "text": "Tôi có nhu cầu khám tại khoa Tim mạch",
+      "entities": [
+        {"entity": "department", "value": "Tim mạch", "start": 29, "end": 37}
+      ]
+    },
+    {
+      "text": "Tôi muốn khám với bác sĩ Lê Minh Đức",
+      "entities": [
+        {"entity": "doctor", "value": "Lê Minh Đức", "start": 23, "end": 34}
+      ]
+    },
+    {
+      "text": "Có bác sĩ Nguyễn Thị Mai khám vào thứ mấy?",
+      "entities": [
+        {"entity": "doctor", "value": "Nguyễn Thị Mai", "start": 10, "end": 24}
+      ]
+    },
+    {
+      "text": "Tôi bị cao huyết áp và tiểu đường type 2",
+      "entities": [
+        {"entity": "medical_history", "value": "cao huyết áp", "start": 7, "end": 19},
+        {"entity": "medical_history", "value": "tiểu đường type 2", "start": 23, "end": 39}
+      ]
+    },
+    {
+      "text": "Tôi đang sử dụng thuốc Paracetamol và Diazepam",
+      "entities": [
+        {"entity": "medication", "value": "Paracetamol", "start": 24, "end": 35},
+        {"entity": "medication", "value": "Diazepam", "start": 39, "end": 47}
+      ]
+    },
+    {
+      "text": "Email của tôi là nguyenvana@example.com",
+      "entities": [
+        {"entity": "email", "value": "nguyenvana@example.com", "start": 18, "end": 40}
+      ]
+    },
+    {
+      "text": "Tôi muốn đổi lịch từ 22/05 sang 28/05",
+      "entities": [
+        {"entity": "old_date", "value": "22/05", "start": 19, "end": 24},
+        {"entity": "new_date", "value": "28/05", "start": 30, "end": 35}
+      ]
+    },
+    {
+      "text": "Đổi giờ khám từ 9:00 sáng thành 15:30 chiều được không?",
+      "entities": [
+        {"entity": "old_time", "value": "9:00 sáng", "start": 17, "end": 26},
+        {"entity": "new_time", "value": "15:30 chiều", "start": 33, "end": 44}
+      ]
+    }
+  ]

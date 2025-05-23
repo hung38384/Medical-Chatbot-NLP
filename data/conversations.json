@@ -1,0 +1,204 @@
+[
+    {
+      "conversation_id": 1,
+      "turns": [
+        {
+          "role": "user",
+          "message": "Xin chào, tôi muốn đặt lịch khám bệnh"
+        },
+        {
+          "role": "bot",
+          "message": "Chào bạn! Tôi là trợ lý ảo của phòng khám. Rất vui được hỗ trợ bạn đặt lịch khám. Bạn vui lòng cho biết họ tên đầy đủ của mình nhé?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi tên là Nguyễn Văn An"
+        },
+        {
+          "role": "bot", 
+          "message": "Cảm ơn anh Nguyễn Văn An. Vui lòng cho biết số điện thoại để phòng khám có thể liên hệ với anh?"
+        },
+        {
+          "role": "user",
+          "message": "Số điện thoại của tôi là 0912345678"
+        },
+        {
+          "role": "bot",
+          "message": "Cảm ơn anh. Anh có thể cho biết anh đang gặp vấn đề gì về sức khỏe hoặc anh muốn khám chuyên khoa nào không?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi bị đau đầu và chóng mặt mấy hôm nay"
+        },
+        {
+          "role": "bot",
+          "message": "Tôi hiểu rồi. Với triệu chứng đau đầu và chóng mặt, tôi khuyên anh nên khám tại khoa Thần kinh hoặc khoa Nội Tổng quát. Anh muốn đặt lịch khám tại khoa nào ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi muốn khám khoa Thần kinh"
+        },
+        {
+          "role": "bot",
+          "message": "Anh muốn đặt lịch khám vào ngày nào? Phòng khám chúng tôi làm việc từ thứ 2 đến thứ 7, từ 8:00 sáng đến 17:00 chiều."
+        },
+        {
+          "role": "user",
+          "message": "Tôi muốn khám vào thứ 5 tuần sau"
+        },
+        {
+          "role": "bot",
+          "message": "Thứ 5 tuần sau (ngày 28/05/2025), khoa Thần kinh có các khung giờ trống: 9:00, 10:30, 14:00 và 15:30. Anh muốn chọn giờ nào ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi muốn đặt lịch lúc 10:30"
+        },
+        {
+          "role": "bot",
+          "message": "Tôi đã ghi nhận lịch khám của anh Nguyễn Văn An vào lúc 10:30 ngày 28/05/2025 tại khoa Thần kinh. Anh vui lòng đến trước 15 phút để làm thủ tục. Anh có cần hỗ trợ thêm thông tin gì không ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi cần mang theo những giấy tờ gì?"
+        },
+        {
+          "role": "bot",
+          "message": "Anh vui lòng mang theo CMND/CCCD, sổ bảo hiểm y tế (nếu có), và các kết quả xét nghiệm/chẩn đoán trước đây liên quan đến tình trạng đau đầu của anh (nếu có). Nếu anh đã từng khám tại phòng khám chúng tôi, hãy mang theo sổ khám bệnh đã cấp trước đây."
+        }
+      ],
+      "entities": {
+        "name": "Nguyễn Văn An",
+        "phone": "0912345678",
+        "symptoms": "đau đầu và chóng mặt",
+        "department": "Thần kinh",
+        "date": "28/05/2025",
+        "time": "10:30"
+      }
+    },
+    {
+      "conversation_id": 2,
+      "turns": [
+        {
+          "role": "user",
+          "message": "Tôi cần đổi lịch khám bệnh"
+        },
+        {
+          "role": "bot",
+          "message": "Xin chào! Để hỗ trợ đổi lịch khám, tôi cần xác nhận một số thông tin. Vui lòng cho biết họ tên của bạn?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi là Trần Thị Bình"
+        },
+        {
+          "role": "bot",
+          "message": "Cảm ơn chị Trần Thị Bình. Vui lòng cho biết số điện thoại chị đã dùng khi đặt lịch trước đó?"
+        },
+        {
+          "role": "user",
+          "message": "0987654321"
+        },
+        {
+          "role": "bot",
+          "message": "Cảm ơn chị. Tôi tìm thấy lịch khám của chị Trần Thị Bình vào ngày 22/05/2025 lúc 14:00 tại khoa Da liễu. Chị muốn đổi sang ngày và giờ nào ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi muốn đổi sang thứ 2 tuần sau, buổi sáng"
+        },
+        {
+          "role": "bot",
+          "message": "Thứ 2 tuần sau (ngày 25/05/2025), khoa Da liễu có các khung giờ trống buổi sáng: 8:30, 9:15 và 11:00. Chị muốn chọn giờ nào ạ?"
+        },
+        {
+          "role": "user",
+          "message": "9:15 được"
+        },
+        {
+          "role": "bot",
+          "message": "Tôi đã cập nhật lịch khám của chị Trần Thị Bình từ 14:00 ngày 22/05/2025 sang 9:15 ngày 25/05/2025, vẫn tại khoa Da liễu. Chị sẽ nhận được tin nhắn xác nhận qua số điện thoại đã đăng ký. Chị cần hỗ trợ thêm gì không ạ?"
+        }
+      ],
+      "entities": {
+        "name": "Trần Thị Bình",
+        "phone": "0987654321",
+        "department": "Da liễu",
+        "old_date": "22/05/2025",
+        "old_time": "14:00",
+        "new_date": "25/05/2025",
+        "new_time": "9:15"
+      }
+    },
+    {
+      "conversation_id": 3,
+      "turns": [
+        {
+          "role": "user",
+          "message": "Cho tôi hỏi phòng khám có bác sĩ chuyên về tim mạch không?"
+        },
+        {
+          "role": "bot",
+          "message": "Dạ, phòng khám chúng tôi có khoa Tim mạch với các bác sĩ chuyên khoa. Hiện tại có BS.CK2 Lê Minh Đức và TS.BS Phạm Thị Hoa đang khám tại khoa Tim mạch. Anh/chị có nhu cầu đặt lịch khám tim mạch không ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi muốn đặt lịch khám với bác sĩ Lê Minh Đức"
+        },
+        {
+          "role": "bot",
+          "message": "Vâng, BS.CK2 Lê Minh Đức khám vào các ngày thứ 3, thứ 5 và thứ 7 hàng tuần. Trước khi đặt lịch, xin vui lòng cho biết họ tên của anh/chị?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi tên Hoàng Văn Chung"
+        },
+        {
+          "role": "bot",
+          "message": "Cảm ơn anh Hoàng Văn Chung. Xin cho biết số điện thoại của anh để tiện liên hệ ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Số điện thoại của tôi là 0978123456"
+        },
+        {
+          "role": "bot",
+          "message": "Cảm ơn anh. Anh muốn đặt lịch khám với BS.CK2 Lê Minh Đức vào ngày nào trong tuần tới ạ? (Bác sĩ khám vào thứ 3, thứ 5 và thứ 7)"
+        },
+        {
+          "role": "user",
+          "message": "Tôi muốn khám vào thứ 7"
+        },
+        {
+          "role": "bot",
+          "message": "Thứ 7 tuần sau (ngày 30/05/2025), BS.CK2 Lê Minh Đức có lịch khám vào các khung giờ: 8:00, 10:00, 13:30 và 15:30. Anh muốn chọn giờ nào ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi chọn 8 giờ sáng"
+        },
+        {
+          "role": "bot",
+          "message": "Tôi đã ghi nhận lịch khám của anh Hoàng Văn Chung với BS.CK2 Lê Minh Đức vào lúc 8:00 sáng ngày 30/05/2025 tại khoa Tim mạch. Anh có tiền sử bệnh tim mạch hoặc đang dùng thuốc gì không để chúng tôi ghi nhận vào hồ sơ ạ?"
+        },
+        {
+          "role": "user",
+          "message": "Tôi bị cao huyết áp và đang uống thuốc hạ áp"
+        },
+        {
+          "role": "bot",
+          "message": "Cảm ơn anh đã cung cấp thông tin. Tôi đã ghi nhận anh có tiền sử cao huyết áp và đang dùng thuốc hạ áp. Vui lòng mang theo các thuốc đang sử dụng khi đến khám để bác sĩ có thể tham khảo. Anh nhớ đến trước giờ hẹn 15 phút để đo huyết áp và làm các thủ tục cần thiết nhé."
+        }
+      ],
+      "entities": {
+        "name": "Hoàng Văn Chung",
+        "phone": "0978123456",
+        "department": "Tim mạch",
+        "doctor": "Lê Minh Đức",
+        "date": "30/05/2025",
+        "time": "8:00",
+        "medical_history": "cao huyết áp",
+        "medication": "thuốc hạ áp"
+      }
+    }
+  ]

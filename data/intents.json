@@ -1,0 +1,232 @@
+[
+  {
+    "tag": "greeting_appointment",
+    "patterns": [
+      "Xin chào, tôi muốn đặt lịch khám bệnh",
+      "Chào bạn, làm thế nào để đặt lịch khám?",
+      "Tôi muốn khám bệnh",
+      "Đặt lịch khám giúp tôi"
+    ],
+    "responses": [
+      "Chào bạn! Tôi có thể hỗ trợ đặt lịch khám cho bạn."
+    ]
+  },
+  {
+    "tag": "appointment_request",
+    "patterns": [
+      "Tôi cần đặt lịch khám bệnh",
+      "Tôi muốn đăng ký khám bệnh",
+      "Tôi cần đặt hẹn với bác sĩ",
+      "Tôi muốn khám"
+    ],
+    "responses": [
+      "Bạn muốn đặt lịch khám vào thời gian nào?"
+    ]
+  },
+  {
+    "tag": "appointment_info",
+    "patterns": [
+      "Làm sao để đặt lịch khám bệnh?",
+      "Hướng dẫn đặt lịch khám",
+      "Tôi cần biết cách đặt lịch"
+    ],
+    "responses": [
+      "Bạn có thể đặt lịch bằng cách cung cấp thông tin cá nhân và thời gian mong muốn."
+    ]
+  },
+  {
+    "tag": "reschedule_appointment",
+    "patterns": [
+      "Tôi cần thay đổi lịch khám",
+      "Tôi muốn đổi ngày khám bệnh",
+      "Đổi lịch giúp tôi"
+    ],
+    "responses": [
+      "Bạn muốn đổi sang ngày nào?"
+    ]
+  },
+  {
+    "tag": "cancel_appointment",
+    "patterns": [
+      "Tôi muốn hủy lịch khám",
+      "Tôi không thể đến khám vào lịch đã đặt",
+      "Tôi không xác nhận",
+      "Tôi không đồng ý",
+      "không",
+      "hủy"
+    ],
+    "responses": [
+      "Lịch khám của bạn đã bị hủy. Cảm ơn bạn đã thông báo!"
+    ]
+  },
+  {
+    "tag": "department_info",
+    "patterns": [
+      "Phòng khám có những chuyên khoa nào?",
+      "Khoa nào điều trị bệnh tiểu đường?",
+      "Có những khoa nào?",
+      "Danh sách các khoa khám bệnh"
+    ],
+    "responses": [
+      "Phòng khám hiện có các khoa: nội tiết, tim mạch, da liễu, nhi, thần kinh,..."
+    ]
+  },
+  {
+    "tag": "doctor_info",
+    "patterns": [
+      "Phòng khám có bác sĩ chuyên khoa tim mạch không?",
+      "Cho tôi thông tin các bác sĩ khoa nhi",
+      "Có bác sĩ nào khám da liễu không?"
+    ],
+    "responses": [
+      "Chúng tôi có nhiều bác sĩ chuyên khoa. Bạn muốn khám bác sĩ nào?"
+    ]
+  },
+  {
+    "tag": "symptom_description",
+    "patterns": [
+      "Tôi bị đau đầu và chóng mặt",
+      "Tôi hay bị khó thở khi vận động",
+      "Tôi có triệu chứng ho nhiều ngày"
+    ],
+    "responses": [
+      "Cảm ơn bạn đã chia sẻ. Chúng tôi sẽ tư vấn bác sĩ phù hợp cho bạn."
+    ]
+  },
+  {
+    "tag": "provide_schedule",
+    "patterns": [
+      "Tôi muốn khám vào thứ 5 tuần sau",
+      "Tôi có thể đến khám vào ngày 25/05",
+      "Lịch khám ngày mai được không?"
+    ],
+    "responses": [
+      "Chúng tôi đã ghi nhận lịch hẹn của bạn."
+    ]
+  },
+  {
+    "tag": "provide_name",
+    "patterns": [
+      "Tôi tên là Nguyễn Văn An",
+      "Tôi là Trần Thị Bình",
+      "Tên tôi là Trịnh Văn Cường"
+    ],
+    "responses": [
+      "Cảm ơn bạn. Tên của bạn đã được ghi nhận."
+    ]
+  },
+  {
+    "tag": "provide_phone",
+    "patterns": [
+      "Số điện thoại của tôi là 0912345678",
+      "Liên hệ với tôi qua số 0987654321",
+      "SĐT của tôi là 0909999999"
+    ],
+    "responses": [
+      "Chúng tôi đã lưu số điện thoại của bạn."
+    ]
+  },
+  {
+    "tag": "select_department",
+    "patterns": [
+      "Tôi muốn khám khoa nội tiết",
+      "Tôi chọn khám tại khoa da liễu",
+      "Khám khoa thần kinh"
+    ],
+    "responses": [
+      "Bạn đã chọn khoa khám. Vui lòng chọn bác sĩ nếu có."
+    ]
+  },
+  {
+    "tag": "select_doctor",
+    "patterns": [
+      "Tôi muốn gặp bác sĩ Nguyễn Văn A",
+      "Tôi chọn khám với bác sĩ Lê Thị B",
+      "Khám với bác sĩ Lê Minh Đức"
+    ],
+    "responses": [
+      "Chúng tôi đã ghi nhận bác sĩ bạn chọn."
+    ]
+  },
+  {
+    "tag": "confirm_appointment",
+    "patterns": [
+      "Tôi xác nhận lịch khám này",
+      "Đúng, tôi chọn lịch này",
+      "có",
+      "tôi xác nhận lịch khám",
+      "đồng ý",
+      "xác nhận",
+      "yes"
+    ],
+    "responses": [
+      "Lịch khám của bạn đã được xác nhận. Hẹn gặp lại!"
+    ]
+  },
+  {
+    "tag": "schedule_info",
+    "patterns": [
+      "Phòng khám có làm việc vào cuối tuần không?",
+      "Phòng khám mở cửa từ mấy giờ?",
+      "Thời gian làm việc của phòng khám?"
+    ],
+    "responses": [
+      "Phòng khám làm việc từ 7h đến 17h30, từ thứ 2 đến Chủ Nhật."
+    ]
+  },
+  {
+    "tag": "document_info",
+    "patterns": [
+      "Tôi cần mang theo những giấy tờ gì?",
+      "Cần chuẩn bị gì khi đến khám?",
+      "Cần mang giấy tờ gì không?"
+    ],
+    "responses": [
+      "Bạn cần mang theo CCCD, BHYT (nếu có) và hồ sơ bệnh lý nếu cần."
+    ]
+  },
+  {
+    "tag": "cost_info",
+    "patterns": [
+      "Chi phí khám bệnh là bao nhiêu?",
+      "Khám tại khoa tim mạch hết bao nhiêu tiền?",
+      "Khám có mất phí không?"
+    ],
+    "responses": [
+      "Chi phí khám dao động từ 100.000đ - 300.000đ tùy theo dịch vụ."
+    ]
+  },
+  {
+    "tag": "insurance_info",
+    "patterns": [
+      "Phòng khám có chấp nhận bảo hiểm y tế không?",
+      "Tôi có thể sử dụng thẻ bảo hiểm được không?",
+      "Có dùng BHYT được không?"
+    ],
+    "responses": [
+      "Phòng khám chấp nhận bảo hiểm y tế đúng tuyến."
+    ]
+  },
+  {
+    "tag": "thank_you",
+    "patterns": [
+      "Cảm ơn bạn nhiều",
+      "Cảm ơn đã giúp đỡ",
+      "Thanks"
+    ],
+    "responses": [
+      "Rất vui được hỗ trợ bạn!"
+    ]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": [
+      "Tạm biệt",
+      "Hẹn gặp lại",
+      "Bye"
+    ],
+    "responses": [
+      "Tạm biệt! Chúc bạn sức khỏe!"
+    ]
+  }
+]

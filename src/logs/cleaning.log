@@ -1,0 +1,4 @@
+2025-05-22 00:49:38,214 - INFO - Starting data cleaning process...
+2025-05-22 00:49:38,224 - INFO - Doctors data cleaned and saved successfully.
+2025-05-22 00:49:38,225 - INFO - Diseases data cleaned and saved successfully.
+2025-05-22 00:49:38,225 - INFO - Data cleaning pipeline completed.
