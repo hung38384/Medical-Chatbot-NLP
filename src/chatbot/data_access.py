@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Load dữ liệu đã được làm sạch
-DOCTORS_PATH = "/Users/admin/Desktop/medical_appointment_chatbot/data/processed/diseases_cleaned.csv"
-DISEASES_PATH = "/Users/admin/Desktop/medical_appointment_chatbot/data/processed/doctors_cleaned.csv"
+DOCTORS_PATH = "data/processed/doctors_cleaned.csv"
+DISEASES_PATH = "data/processed/diseases_cleaned.csv"
 
 # Có thể load một lần và cache lại nếu muốn tối ưu
 doctors_df = pd.read_csv(DOCTORS_PATH)

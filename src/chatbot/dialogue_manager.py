@@ -8,7 +8,7 @@ from database.database import insert_patient, get_patient_by_phone, schedule_app
 class DialogueManager:
     def __init__(self):
         self.nlp = NLPProcessor()
-        self.response_generator = ResponseGenerator("/Users/admin/Desktop/medical_appointment_chatbot/data/intents.json")
+        self.response_generator = ResponseGenerator("data/intents.json")
 
         self.conversation_state = {
             "current_intent": None,
@@ -211,8 +211,14 @@ class DialogueManager:
         time = entities.get("time", "08:00")
 
         if not all([name, phone, department, date]):
-            print("⚙️ DEBUG ENTITIES:", self.conversation_state["entities"])
-            return "Thiếu thông tin để đặt lịch. Vui lòng cung cấp đầy đủ tên, số điện thoại, chuyên khoa và ngày khám."
+            missing_info = []
+            if not name: missing_info.append("tên")
+            if not phone: missing_info.append("số điện thoại")
+            if not department: missing_info.append("chuyên khoa")
+            if not date: missing_info.append("ngày khám")
+
+            missing_str = ", ".join(missing_info[:-1]) + f" và {missing_info[-1]}" if len(missing_info) > 1 else missing_info[0]
+            return f"Vui lòng cung cấp thêm {missing_str} để tôi có thể hoàn tất việc đặt lịch cho bạn."
 
         # Kiểm tra hoặc thêm bệnh nhân
         patient = get_patient_by_phone(phone)

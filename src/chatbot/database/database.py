@@ -1,7 +1,7 @@
 import sqlite3
 from datetime import datetime
 
-DB_PATH = "/Users/admin/Desktop/medical_appointment_chatbot/src/chatbot/database/medical_chatbot.db"
+DB_PATH = "src/chatbot/database/medical_chatbot.db"
 
 # ------------------ Kết nối Database ------------------
 def get_connection():

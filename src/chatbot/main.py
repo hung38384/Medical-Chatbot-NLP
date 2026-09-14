@@ -1,3 +1,4 @@
+import logging
 from dialogue_manager import DialogueManager
 
 def chat():
@@ -27,7 +28,7 @@ def chat():
             print()
 
         except Exception as e:
-            print("❌ Đã xảy ra lỗi khi xử lý:", e)
+            logging.exception("❌ Đã xảy ra lỗi khi xử lý:")
             continue
 
 if __name__ == "__main__":
