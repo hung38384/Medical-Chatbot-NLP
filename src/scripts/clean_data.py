@@ -19,8 +19,8 @@ def normalize_text(text):
     return text
 
 def clean_doctors():
-    input_path = "/Users/admin/Desktop/medical_appointment_chatbot/data/raw/doctors.csv"
-    output_path = "/Users/admin/Desktop/medical_appointment_chatbot/data/processed/doctors_cleaned.csv"
+    input_path = "data/raw/doctors.csv"
+    output_path = "data/processed/doctors_cleaned.csv"
 
     try:
         df = pd.read_csv(input_path)
@@ -29,7 +29,7 @@ def clean_doctors():
         # Loại bỏ hàng null hoặc thiếu dữ liệu quan trọng
         df.dropna(subset=["name", "specialty", "schedule"], inplace=True)
 
-        os.makedirs("/Users/admin/Desktop/medical_appointment_chatbot/data/processed", exist_ok=True)
+        os.makedirs("data/processed", exist_ok=True)
         df.to_csv(output_path, index=False)
         logging.info("Doctors data cleaned and saved successfully.")
 
@@ -37,15 +37,15 @@ def clean_doctors():
         logging.error(f"Failed to clean doctors.csv: {e}")
 
 def clean_diseases():
-    input_path = "/Users/admin/Desktop/medical_appointment_chatbot/data/raw/diseases.csv"
-    output_path = "/Users/admin/Desktop/medical_appointment_chatbot/data/processed/diseases_cleaned.csv"
+    input_path = "data/raw/diseases.csv"
+    output_path = "data/processed/diseases_cleaned.csv"
 
     try:
         df = pd.read_csv(input_path)
         df = df.applymap(normalize_text)
         df.dropna(subset=["name", "symptoms", "treatment"], inplace=True)
 
-        os.makedirs("/Users/admin/Desktop/medical_appointment_chatbot/data/processed", exist_ok=True)
+        os.makedirs("data/processed", exist_ok=True)
         df.to_csv(output_path, index=False)
         logging.info("Diseases data cleaned and saved successfully.")
 

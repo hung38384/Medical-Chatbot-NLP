@@ -5,11 +5,11 @@ conn = sqlite3.connect("medical_chatbot.db")
 cursor = conn.cursor()
 
 # Nạp dữ liệu từ doctors.csv
-doctors_df = pd.read_csv("/Users/admin/Desktop/medical_appointment_chatbot/data/processed/doctors_cleaned.csv")
+doctors_df = pd.read_csv("data/processed/doctors_cleaned.csv")
 doctors_df.to_sql("doctors", conn, if_exists="replace", index=False)
 
 # Nạp dữ liệu từ diseases.csv
-diseases_df = pd.read_csv("/Users/admin/Desktop/medical_appointment_chatbot/data/processed/diseases_cleaned.csv")
+diseases_df = pd.read_csv("data/processed/diseases_cleaned.csv")
 diseases_df.to_sql("diseases", conn, if_exists="replace", index=False)
 
 

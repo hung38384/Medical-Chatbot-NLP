@@ -14,8 +14,8 @@ import os
 class NLPProcessor:
     def __init__(self):
         # Đường dẫn tới các file dữ liệu
-        self.intents_file = "/Users/admin/Desktop/medical_appointment_chatbot/data/intents.json"
-        self.entities_file = "/Users/admin/Desktop/medical_appointment_chatbot/data/entities.json"
+        self.intents_file = "data/intents.json"
+        self.entities_file = "data/entities.json"
         self.model_dir = "models"
         self.intents_data = self._load_json_data(self.intents_file)
         self.entities_data = self._load_json_data(self.entities_file)
@@ -102,7 +102,7 @@ class NLPProcessor:
         # Tạo các pattern regex cho việc trích xuất entity
         patterns = {
             'name': r'[tT]ên (?:là|tôi là|của tôi là) ([\p{L}\s]+)',
-            'phone': r'(?:số điện thoại|liên hệ|sđt|số|điện thoại)[^\d]*(0\d{9,10})',
+            'phone': r'(?:số điện thoại|liên hệ|sđt|số|điện thoại)[^\d]*((?:\+84|0)\d{9,10})',
             'date': r'(?:ngày|vào ngày|đặt ngày|ngày khám|lịch khám ngày) (\d{1,2}[/-]\d{1,2}(?:[/-]\d{2,4})?)',
             'day_of_week': r'(?:vào|ngày) (thứ [2-7]|chủ nhật)',
             'time': r'(?:lúc|vào lúc|giờ|lịch) (\d{1,2}[:.]\d{2}|\d{1,2} giờ(?:[^\d](?:\d{1,2})? phút)?)',
@@ -161,7 +161,7 @@ class NLPProcessor:
         max_sim = similarities[max_sim_idx]
         
         # Nếu similarity quá thấp, có thể không nhận biết được intent
-        if max_sim < 0.3:
+        if max_sim < 0.45:
             return {"intent": "unknown", "confidence": max_sim}
         
         predicted_intent = self.intent_tags[max_sim_idx]
@@ -199,6 +199,13 @@ class NLPProcessor:
             except:
                 pass
         
+        # Xử lý các từ chỉ ngày tương đối (hôm nay, ngày mai)
+        text_lower = text.lower()
+        if 'hôm nay' in text_lower:
+            entities['date'] = datetime.now().strftime("%d/%m/%Y")
+        elif 'ngày mai' in text_lower:
+            entities['date'] = (datetime.now() + timedelta(days=1)).strftime("%d/%m/%Y")
+
         # Xử lý ngày trong tuần
         if 'day_of_week' in entities:
             day_of_week = entities['day_of_week']
