@@ -23,6 +23,11 @@ def chat():
                 print("⚠️ Vui lòng nhập gì đó...")
                 continue
 
+            if user_input.lower() == "retrain":
+                print("🔄 Đang đào tạo lại mô hình nhận diện ý định...")
+                dialogue_manager.nlp.train_intent_classifier()
+                continue
+
             response = dialogue_manager.process_message(user_input)
             print("🤖 Chatbot:", response)
             print()

@@ -1,7 +1,8 @@
 import sqlite3
+import os
 from datetime import datetime
 
-DB_PATH = "src/chatbot/database/medical_chatbot.db"
+DB_PATH = os.path.join(os.path.dirname(__file__), "medical_chatbot.db")
 
 # ------------------ Kết nối Database ------------------
 def get_connection():
